@@ -15,16 +15,14 @@
     </py-config>
     <py-script>
         import numpy as np
-        selection = np.random.randint(1, 101)  # Generates a number between 1 and 100
+        selection = np.random.randint(1, 100,1)[0]  
     </py-script>
     <form>
-        <label for="guess">Guess:</label>
-        <input type="number" name="guess" id="guess" />
+        <label for="guess">Guess:</label><input name="guess" id="guess">
 
+        
         <button type="button" id="submit">Check Guess</button>
-
-        <label for="result">Result:</label>
-        <div name="result" id="result"></div>
+        <label for="result">Result:</label><div name="result" id="result"></div>
     </form>
 
     <py-script>
